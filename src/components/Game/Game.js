@@ -15,7 +15,7 @@ function Game() {
 
   return (
     <>
-      <GuessList guesses={guesses} />
+      <GuessList guesses={guesses} answer={answer} />
       <GuessInput
         onSubmit={(guess) => {
           const nextGuess = { word: guess, id: Math.random() };

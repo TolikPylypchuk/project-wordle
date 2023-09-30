@@ -9,7 +9,6 @@ function GuessInput({ onSubmit }) {
     event.preventDefault();
 
     if (guess.length === wordLength) {
-      console.log(guess);
       onSubmit(guess);
       setGuess("");
     }
