@@ -5,7 +5,6 @@ import { range } from "../../utils";
 function Guess({ word, answer }) {
   const result = checkGuess(word, answer) || [];
 
-  // Words are short so using the index as the key is fine
   return (
     <p className="guess">
       {range(5).map((index) => (
